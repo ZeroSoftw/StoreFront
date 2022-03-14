@@ -1,0 +1,135 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.mx.farmaluxa.login"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\vmddl\Desktop\Proyectos Android\Farmaluxa\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->C:\Users\vmddl\Desktop\Proyectos Android\Farmaluxa\app\src\main\AndroidManifest.xml
+10
+11    <queries>
+11-->[androidx.test:runner:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\0712f143d05f3d8cf5dfa154006b7e5e\transformed\runner-1.4.0\AndroidManifest.xml:24:5-28:15
+12        <package android:name="androidx.test.orchestrator" />
+12-->[androidx.test:runner:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\0712f143d05f3d8cf5dfa154006b7e5e\transformed\runner-1.4.0\AndroidManifest.xml:25:9-62
+12-->[androidx.test:runner:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\0712f143d05f3d8cf5dfa154006b7e5e\transformed\runner-1.4.0\AndroidManifest.xml:25:18-59
+13        <package android:name="androidx.test.services" />
+13-->[androidx.test:runner:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\0712f143d05f3d8cf5dfa154006b7e5e\transformed\runner-1.4.0\AndroidManifest.xml:26:9-58
+13-->[androidx.test:runner:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\0712f143d05f3d8cf5dfa154006b7e5e\transformed\runner-1.4.0\AndroidManifest.xml:26:18-55
+14        <package android:name="com.google.android.apps.common.testing.services" />
+14-->[androidx.test:runner:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\0712f143d05f3d8cf5dfa154006b7e5e\transformed\runner-1.4.0\AndroidManifest.xml:27:9-83
+14-->[androidx.test:runner:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\0712f143d05f3d8cf5dfa154006b7e5e\transformed\runner-1.4.0\AndroidManifest.xml:27:18-80
+15    </queries>
+16
+17    <uses-permission android:name="android.permission.REORDER_TASKS" />
+17-->[androidx.test:core:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\d0c9de8f34af6b7ebff7f4fe0e9710ff\transformed\core-1.4.0\AndroidManifest.xml:24:5-72
+17-->[androidx.test:core:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\d0c9de8f34af6b7ebff7f4fe0e9710ff\transformed\core-1.4.0\AndroidManifest.xml:24:22-69
+18
+19    <application
+19-->C:\Users\vmddl\Desktop\Proyectos Android\Farmaluxa\app\src\main\AndroidManifest.xml:5:5-21:19
+20        android:allowBackup="true"
+20-->C:\Users\vmddl\Desktop\Proyectos Android\Farmaluxa\app\src\main\AndroidManifest.xml:6:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.7.0] C:\Users\vmddl\.gradle\caches\transforms-3\adacc4bbdca3c037c01e5031782c646c\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:extractNativeLibs="false"
+24        android:icon="@mipmap/ic_launcher"
+24-->C:\Users\vmddl\Desktop\Proyectos Android\Farmaluxa\app\src\main\AndroidManifest.xml:7:9-43
+25        android:label="@string/app_name"
+25-->C:\Users\vmddl\Desktop\Proyectos Android\Farmaluxa\app\src\main\AndroidManifest.xml:8:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->C:\Users\vmddl\Desktop\Proyectos Android\Farmaluxa\app\src\main\AndroidManifest.xml:9:9-54
+27        android:supportsRtl="true"
+27-->C:\Users\vmddl\Desktop\Proyectos Android\Farmaluxa\app\src\main\AndroidManifest.xml:10:9-35
+28        android:theme="@style/Theme.Farmaluxa" >
+28-->C:\Users\vmddl\Desktop\Proyectos Android\Farmaluxa\app\src\main\AndroidManifest.xml:11:9-47
+29        <activity
+29-->C:\Users\vmddl\Desktop\Proyectos Android\Farmaluxa\app\src\main\AndroidManifest.xml:12:9-20:20
+30            android:name="com.mx.farmaluxa.login.ui.view.MainActivity"
+30-->C:\Users\vmddl\Desktop\Proyectos Android\Farmaluxa\app\src\main\AndroidManifest.xml:13:13-49
+31            android:exported="true" >
+31-->C:\Users\vmddl\Desktop\Proyectos Android\Farmaluxa\app\src\main\AndroidManifest.xml:14:13-36
+32            <intent-filter>
+32-->C:\Users\vmddl\Desktop\Proyectos Android\Farmaluxa\app\src\main\AndroidManifest.xml:15:13-19:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->C:\Users\vmddl\Desktop\Proyectos Android\Farmaluxa\app\src\main\AndroidManifest.xml:16:17-69
+33-->C:\Users\vmddl\Desktop\Proyectos Android\Farmaluxa\app\src\main\AndroidManifest.xml:16:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->C:\Users\vmddl\Desktop\Proyectos Android\Farmaluxa\app\src\main\AndroidManifest.xml:18:17-77
+35-->C:\Users\vmddl\Desktop\Proyectos Android\Farmaluxa\app\src\main\AndroidManifest.xml:18:27-74
+36            </intent-filter>
+37        </activity>
+38
+39        <provider
+39-->[androidx.emoji2:emoji2:1.0.0] C:\Users\vmddl\.gradle\caches\transforms-3\0598df94f460c67e853f90789c9d40d1\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+40            android:name="androidx.startup.InitializationProvider"
+40-->[androidx.emoji2:emoji2:1.0.0] C:\Users\vmddl\.gradle\caches\transforms-3\0598df94f460c67e853f90789c9d40d1\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+41            android:authorities="com.mx.farmaluxa.login.androidx-startup"
+41-->[androidx.emoji2:emoji2:1.0.0] C:\Users\vmddl\.gradle\caches\transforms-3\0598df94f460c67e853f90789c9d40d1\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+42            android:exported="false" >
+42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\vmddl\.gradle\caches\transforms-3\0598df94f460c67e853f90789c9d40d1\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+43            <meta-data
+43-->[androidx.emoji2:emoji2:1.0.0] C:\Users\vmddl\.gradle\caches\transforms-3\0598df94f460c67e853f90789c9d40d1\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+44                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+44-->[androidx.emoji2:emoji2:1.0.0] C:\Users\vmddl\.gradle\caches\transforms-3\0598df94f460c67e853f90789c9d40d1\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+45                android:value="androidx.startup" />
+45-->[androidx.emoji2:emoji2:1.0.0] C:\Users\vmddl\.gradle\caches\transforms-3\0598df94f460c67e853f90789c9d40d1\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+46            <meta-data
+46-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\c4217aea2ca3d9a23241dc893df048d3\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+47                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+47-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\c4217aea2ca3d9a23241dc893df048d3\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+48                android:value="androidx.startup" />
+48-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\c4217aea2ca3d9a23241dc893df048d3\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+49        </provider>
+50
+51        <activity
+51-->[androidx.test:core:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\d0c9de8f34af6b7ebff7f4fe0e9710ff\transformed\core-1.4.0\AndroidManifest.xml:27:9-34:20
+52            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+52-->[androidx.test:core:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\d0c9de8f34af6b7ebff7f4fe0e9710ff\transformed\core-1.4.0\AndroidManifest.xml:28:13-99
+53            android:exported="true"
+53-->[androidx.test:core:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\d0c9de8f34af6b7ebff7f4fe0e9710ff\transformed\core-1.4.0\AndroidManifest.xml:29:13-36
+54            android:theme="@android:style/Theme" >
+54-->[androidx.test:core:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\d0c9de8f34af6b7ebff7f4fe0e9710ff\transformed\core-1.4.0\AndroidManifest.xml:30:13-49
+55            <intent-filter>
+55-->[androidx.test:core:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\d0c9de8f34af6b7ebff7f4fe0e9710ff\transformed\core-1.4.0\AndroidManifest.xml:31:13-33:29
+56                <action android:name="android.intent.action.MAIN" />
+56-->C:\Users\vmddl\Desktop\Proyectos Android\Farmaluxa\app\src\main\AndroidManifest.xml:16:17-69
+56-->C:\Users\vmddl\Desktop\Proyectos Android\Farmaluxa\app\src\main\AndroidManifest.xml:16:25-66
+57            </intent-filter>
+58        </activity>
+59        <activity
+59-->[androidx.test:core:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\d0c9de8f34af6b7ebff7f4fe0e9710ff\transformed\core-1.4.0\AndroidManifest.xml:35:9-42:20
+60            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+60-->[androidx.test:core:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\d0c9de8f34af6b7ebff7f4fe0e9710ff\transformed\core-1.4.0\AndroidManifest.xml:36:13-95
+61            android:exported="true"
+61-->[androidx.test:core:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\d0c9de8f34af6b7ebff7f4fe0e9710ff\transformed\core-1.4.0\AndroidManifest.xml:37:13-36
+62            android:theme="@android:style/Theme" >
+62-->[androidx.test:core:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\d0c9de8f34af6b7ebff7f4fe0e9710ff\transformed\core-1.4.0\AndroidManifest.xml:38:13-49
+63            <intent-filter>
+63-->[androidx.test:core:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\d0c9de8f34af6b7ebff7f4fe0e9710ff\transformed\core-1.4.0\AndroidManifest.xml:31:13-33:29
+64                <action android:name="android.intent.action.MAIN" />
+64-->C:\Users\vmddl\Desktop\Proyectos Android\Farmaluxa\app\src\main\AndroidManifest.xml:16:17-69
+64-->C:\Users\vmddl\Desktop\Proyectos Android\Farmaluxa\app\src\main\AndroidManifest.xml:16:25-66
+65            </intent-filter>
+66        </activity>
+67        <activity
+67-->[androidx.test:core:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\d0c9de8f34af6b7ebff7f4fe0e9710ff\transformed\core-1.4.0\AndroidManifest.xml:43:9-50:20
+68            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+68-->[androidx.test:core:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\d0c9de8f34af6b7ebff7f4fe0e9710ff\transformed\core-1.4.0\AndroidManifest.xml:44:13-103
+69            android:exported="true"
+69-->[androidx.test:core:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\d0c9de8f34af6b7ebff7f4fe0e9710ff\transformed\core-1.4.0\AndroidManifest.xml:45:13-36
+70            android:theme="@android:style/Theme.Dialog" >
+70-->[androidx.test:core:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\d0c9de8f34af6b7ebff7f4fe0e9710ff\transformed\core-1.4.0\AndroidManifest.xml:46:13-56
+71            <intent-filter>
+71-->[androidx.test:core:1.4.0] C:\Users\vmddl\.gradle\caches\transforms-3\d0c9de8f34af6b7ebff7f4fe0e9710ff\transformed\core-1.4.0\AndroidManifest.xml:31:13-33:29
+72                <action android:name="android.intent.action.MAIN" />
+72-->C:\Users\vmddl\Desktop\Proyectos Android\Farmaluxa\app\src\main\AndroidManifest.xml:16:17-69
+72-->C:\Users\vmddl\Desktop\Proyectos Android\Farmaluxa\app\src\main\AndroidManifest.xml:16:25-66
+73            </intent-filter>
+74        </activity>
+75    </application>
+76
+77</manifest>
