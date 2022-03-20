@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dimen_sixteen"
+    android:layout_marginTop="@dimen/dimen_eighteen"
+    android:layout_marginEnd="@dimen/dimen_sixteen"
+    android:elevation="@dimen/dimen_five"
+    app:cardCornerRadius="@dimen/dimen_ten">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glV1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".65" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glV2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glH1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".5" />
+
+        <TextView
+            android:id="@+id/tvRequisitionNum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_sixteen"
+            android:layout_marginTop="@dimen/dimen_sixteen"
+            android:layout_marginEnd="@dimen/dimen_eight"
+            android:fontFamily="@font/bevietnampro_bold"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/txt_eighteen"
+            app:layout_constraintEnd_toStartOf="@+id/glV1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="#213412" />
+
+        <TextView
+            android:id="@+id/tvClientName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_eight"
+            android:layout_marginEnd="@dimen/dimen_eight"
+            android:layout_marginBottom="@dimen/dimen_sixteen"
+            android:fontFamily="@font/bevietnampro_semi_bold"
+            android:textSize="@dimen/txt_fourteen"
+            app:layout_constraintBottom_toTopOf="@id/glH1"
+            app:layout_constraintEnd_toStartOf="@id/glV1"
+            app:layout_constraintStart_toStartOf="@id/tvRequisitionNum"
+            app:layout_constraintTop_toBottomOf="@id/tvRequisitionNum"
+            tools:text="Gustavo Hernandez" />
+
+        <TextView
+            android:id="@+id/tvDateRequest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_eight"
+            android:layout_marginEnd="@dimen/dimen_sixteen"
+            android:fontFamily="@font/bevietnampro_semi_bold"
+            android:gravity="end"
+            android:textSize="@dimen/txt_fourteen"
+            app:layout_constraintBottom_toBottomOf="@+id/tvRequisitionNum"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/glV1"
+            app:layout_constraintTop_toTopOf="@+id/tvRequisitionNum"
+            tools:text="20/02/2022" />
+
+        <TextView
+            android:id="@+id/tvProducts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bevietnampro_semi_bold"
+            android:gravity="end"
+            android:textSize="@dimen/txt_fourteen"
+            app:layout_constraintBottom_toBottomOf="@+id/tvClientName"
+            app:layout_constraintEnd_toEndOf="@id/tvDateRequest"
+            app:layout_constraintStart_toStartOf="@id/tvDateRequest"
+            app:layout_constraintTop_toTopOf="@+id/tvClientName"
+            tools:text="12 artículos" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/indigo_50_reset"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/glH1" />
+
+        <TextView
+            android:id="@+id/tvDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dimen_five"
+            android:fontFamily="@font/bevietnampro_semi_bold"
+            android:gravity="end|center"
+            android:text="@string/str_show_detail_requisition"
+            android:textSize="@dimen/txt_eighteen"
+            app:drawableEndCompat="@drawable/ic_arrow_forward"
+            app:drawableTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/tvProducts"
+            app:layout_constraintStart_toEndOf="@id/glV2"
+            app:layout_constraintTop_toBottomOf="@+id/glH1" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chpStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/dimen_forty_eight"
+            android:textColor="@color/indigo_400_dark"
+            android:fontFamily="@font/bevietnampro_bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/glV2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvClientName"
+            app:layout_constraintTop_toBottomOf="@+id/glH1"
+            app:chipBackgroundColor="@color/chip_background"
+            tools:text="Surtimiento" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

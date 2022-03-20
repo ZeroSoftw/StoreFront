@@ -6,10 +6,26 @@
         <entry key="..\:/Users/vmddl/Documents/StoreFront/Farmaluxa/app/src/main/res/layout/activity_main.xml" value="0.18206521739130435" />
         <entry key="..\:/Users/vmddl/Documents/StoreFront/Farmaluxa/app/src/main/res/layout/fragment_login.xml" value="0.25" />
         <entry key="..\:/Users/vmddl/Documents/StoreFront/Farmaluxa/sharedutil/src/main/res/font/font.xml" value="0.23020833333333332" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.184" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.184" />
+        <entry key="app/src/main/res/drawable/ic_lock.xml" value="0.184" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.31252672082086363" />
+        <entry key="sharedutil/src/main/res/drawable/ic_add_circle.xml" value="0.184" />
+        <entry key="sharedutil/src/main/res/drawable/ic_header_bg.xml" value="0.184" />
+        <entry key="sharedutil/src/main/res/drawable/ic_menu.xml" value="0.184" />
+        <entry key="sharedutil/src/main/res/layout/item_header_requisition_layout.xml" value="0.3002780352177943" />
+        <entry key="warehouse/src/main/res/drawable/ic_arrow_forward.xml" value="0.184" />
+        <entry key="warehouse/src/main/res/drawable/ic_filter.xml" value="0.184" />
+        <entry key="warehouse/src/main/res/drawable/ic_menu.xml" value="0.184" />
+        <entry key="warehouse/src/main/res/drawable/ic_requisition.xml" value="0.184" />
+        <entry key="warehouse/src/main/res/drawable/ic_search.xml" value="0.184" />
+        <entry key="warehouse/src/main/res/layout/activity_warehouse.xml" value="0.36666666666666664" />
+        <entry key="warehouse/src/main/res/layout/fragment_requisition_wh.xml" value="0.3002780352177943" />
+        <entry key="warehouse/src/main/res/layout/item_recycler_requisition_wh_layout.xml" value="0.22659256092347158" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

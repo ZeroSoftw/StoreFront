@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.mx.farmaluxa.login.databinding.FragmentLoginBinding
+import com.mx.farmaluxa.warehouse.ui.view.WarehouseActivity
 
 class LoginFragment : Fragment() {
 
@@ -39,7 +40,11 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         this.binding.btnLogin.setOnClickListener {
-            openWhatsApp()
+            this.showWarehouse()
+        }
+
+        this.binding.tvSignUp.setOnClickListener {
+            this.openWhatsApp()
         }
     }
 
@@ -73,5 +78,14 @@ class LoginFragment : Fragment() {
         }
         return isInstalled
 
+    }
+
+    private fun showWarehouse() {
+        val intent = Intent(
+            this.requireContext(),
+            WarehouseActivity::class.java
+        )
+
+        startActivity(intent)
     }
 }

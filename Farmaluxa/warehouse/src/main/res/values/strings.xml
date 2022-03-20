@@ -1,0 +1,10 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- RequisitionFragment -->
+    <string name="str_title_module">Requisiciones</string>
+    <string name="str_num_requisition">#%1$s</string>
+    <string name="str_num_product">%1$d artículo</string>
+    <string name="str_show_detail_requisition">Ver más</string>
+</resources>

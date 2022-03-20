@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="dimen_five">5dp</dimen>
+    <dimen name="dimen_eight">8dp</dimen>
     <dimen name="dimen_ten">10dp</dimen>
+    <dimen name="dimen_fourteen">14dp</dimen>
     <dimen name="dimen_fifteen">15dp</dimen>
+    <dimen name="dimen_sixteen">16dp</dimen>
+    <dimen name="dimen_eighteen">18dp</dimen>
     <dimen name="dimen_twenty">20dp</dimen>
     <dimen name="dimen_thirty">30dp</dimen>
+    <dimen name="dimen_forty_eight">48dp</dimen>
+    <dimen name="dimen_one_hundred_twenty_eight">128dp</dimen>
 
+    <dimen name="txt_fourteen">14sp</dimen>
     <dimen name="txt_fifteen">15sp</dimen>
+    <dimen name="txt_sixteen">16sp</dimen>
     <dimen name="txt_seventeen">17sp</dimen>
+    <dimen name="txt_eighteen">18sp</dimen>
     <dimen name="txt_twenty">20sp</dimen>
+    <dimen name="txt_twenty_eight">28sp</dimen>
     <dimen name="txt_thirty_five">35sp</dimen>
 
 </resources>
