@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.mx.farmaluxa.login.databinding.FragmentLoginBinding
+import com.mx.farmaluxa.sharedutil.core.util.SUUtil
 import com.mx.farmaluxa.warehouse.ui.view.WarehouseActivity
 
 class LoginFragment : Fragment() {
@@ -40,10 +41,19 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         this.binding.btnLogin.setOnClickListener {
-            this.showWarehouse()
+            val user = this.binding.tilUser.editText!!.text.toString()
+            val pass = this.binding.tilPassword.editText!!.text.toString()
+            if(user == "admin" && pass == "pass"){
+                this.showWarehouse()
+            } else {
+                this.binding.tilUser.editText!!.setText("")
+                this.binding.tilPassword.editText!!.setText("")
+                SUUtil.MaterialAlertDialog(this.requireContext(), "Usuario o contraseña incorrecto")
+            }
+
         }
 
-        this.binding.tvSignUp.setOnClickListener {
+        this.binding.tvSignUp.setOnClickListener{
             this.openWhatsApp()
         }
     }
@@ -71,21 +81,16 @@ class LoginFragment : Fragment() {
         val pm: PackageManager = this.requireContext().packageManager
 
         val isInstalled: Boolean = try {
-            pm.getPackageInfo("com.whatsapp", PackageManager.GET_ACTIVITIES);
-            return true;
+            pm.getPackageInfo("com.whatsapp", PackageManager.GET_ACTIVITIES)
+            return true
         } catch (e: PackageManager.NameNotFoundException) {
             false
         }
         return isInstalled
-
     }
 
     private fun showWarehouse() {
-        val intent = Intent(
-            this.requireContext(),
-            WarehouseActivity::class.java
-        )
-
+        val intent = Intent(this.requireContext(), WarehouseActivity::class.java)
         startActivity(intent)
     }
 }

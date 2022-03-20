@@ -2,6 +2,10 @@
 <resources>
     <string name="app_name">Farmaluxa</string>
 
+<!--    ALERT DIALOG-->
+    <string name="str_title_alert">Aviso</string>
+    <string name="str_cancel">Cancelar</string>
+
     <!-- LOGIN -->
     <string name="str_welcome">Bienvenido</string>
     <string name="str_login_title">Inicia sesión para comenzar</string>

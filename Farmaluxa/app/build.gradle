@@ -37,6 +37,6 @@ android {
 }
 
 dependencies {
-    implementation project("::sharedutil")
-    implementation project(":warehouse")
+    implementation project(path: '::sharedutil')
+    implementation project(path: ':warehouse')
 }
