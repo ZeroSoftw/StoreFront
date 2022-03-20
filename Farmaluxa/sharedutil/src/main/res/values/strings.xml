@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<!--    LOGIN-->
     <string name="str_welcome">Bienvenido</string>
-    <string name="str_login">Inicia sesión para comenzar</string>
+    <string name="str_login_title">Inicia sesión para comenzar</string>
     <string name="str_user">Usuario</string>
+    <string name="str_password">Contraseña</string>
+    <string name="str_login">Iniciar sesión</string>
+    <string name="whatsapp_is_not_installed">WhatsApp no está instalado</string>
+    <string name="str_not_account">¿No tienes una cuenta? <font fgcolor='#5C84FF'>Registrate</font></string>
+
 
 </resources>

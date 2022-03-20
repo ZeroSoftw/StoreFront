@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/vmddl/Documents/StoreFront/Farmaluxa/app/src/main/res/layout/fragment_login.xml" value="0.5" />
+        <entry key="..\:/Users/vmddl/Documents/StoreFront/Farmaluxa/app/src/main/res/layout/activity_main.xml" value="0.18206521739130435" />
+        <entry key="..\:/Users/vmddl/Documents/StoreFront/Farmaluxa/app/src/main/res/layout/fragment_login.xml" value="0.25" />
         <entry key="..\:/Users/vmddl/Documents/StoreFront/Farmaluxa/sharedutil/src/main/res/font/font.xml" value="0.23020833333333332" />
       </map>
     </option>

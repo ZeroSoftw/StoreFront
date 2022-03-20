@@ -13,7 +13,7 @@
         android:background="@color/blue_login"
         android:importantForAccessibility="no"
         android:padding="@dimen/dimen_fifteen"
-        android:src="@drawable/ic_login"
+        android:src="@drawable/ic_password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,22 +38,27 @@
         android:fontFamily="@font/bevietnampro_light"
         android:gravity="center"
         android:layout_marginTop="@dimen/dimen_five"
-        android:text="@string/str_login"
+        android:text="@string/str_login_title"
         android:textColor="@color/black"
         android:textSize="@dimen/txt_twenty"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvWelcome" />
 
-
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/dimen_fifteen"
+        android:layout_marginStart="@dimen/dimen_twenty"
+        android:layout_marginEnd="@dimen/dimen_twenty"
         app:startIconDrawable="@drawable/ic_user"
+        app:startIconTint="@color/blue_icon"
+        android:background="@color/white"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:hint="@string/str_user"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvLogin">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -61,5 +66,52 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_fifteen"
+        app:startIconDrawable="@drawable/ic_lock"
+        app:startIconTint="@color/blue_icon"
+        android:background="@color/white"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="@string/str_password"
+        app:layout_constraintStart_toStartOf="@id/tilUser"
+        app:layout_constraintEnd_toEndOf="@id/tilUser"
+        app:layout_constraintTop_toBottomOf="@id/tilUser">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/str_login"
+        app:cornerRadius="@dimen/dimen_thirty"
+        android:textSize="@dimen/txt_seventeen"
+        android:textAllCaps="false"
+        android:fontFamily="@font/bevietnampro_bold"
+        android:padding="@dimen/dimen_fifteen"
+        android:layout_marginTop="@dimen/dimen_fifteen"
+        app:layout_constraintStart_toStartOf="@id/tilUser"
+        app:layout_constraintTop_toBottomOf="@+id/tilPassword"
+        app:layout_constraintEnd_toEndOf="@id/tilUser"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:fontFamily="@font/bevietnampro_bold"
+        android:layout_margin="@dimen/dimen_fifteen"
+        android:textSize="@dimen/txt_seventeen"
+        android:text="@string/str_not_account" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
