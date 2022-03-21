@@ -122,14 +122,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:minHeight="@dimen/dimen_forty_eight"
-            android:textColor="@color/indigo_400_dark"
+            android:textColor="@color/blue_primary"
             android:fontFamily="@font/bevietnampro_bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/glV2"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/tvClientName"
             app:layout_constraintTop_toBottomOf="@+id/glH1"
-            app:chipBackgroundColor="@color/chip_background"
+            app:chipBackgroundColor="@color/blue_icon"
             tools:text="Surtimiento" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

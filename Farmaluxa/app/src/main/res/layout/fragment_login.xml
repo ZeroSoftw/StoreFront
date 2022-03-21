@@ -10,7 +10,7 @@
         android:id="@+id/logo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/blue_login"
+        android:background="@color/blue_primary"
         android:importantForAccessibility="no"
         android:padding="@dimen/dimen_fifteen"
         android:src="@drawable/ic_password"

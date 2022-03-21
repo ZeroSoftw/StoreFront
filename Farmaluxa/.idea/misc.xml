@@ -6,6 +6,8 @@
         <entry key="..\:/Users/vmddl/Documents/StoreFront/Farmaluxa/app/src/main/res/layout/activity_main.xml" value="0.18206521739130435" />
         <entry key="..\:/Users/vmddl/Documents/StoreFront/Farmaluxa/app/src/main/res/layout/fragment_login.xml" value="0.25" />
         <entry key="..\:/Users/vmddl/Documents/StoreFront/Farmaluxa/sharedutil/src/main/res/font/font.xml" value="0.23020833333333332" />
+        <entry key="..\:/Users/vmddl/Documents/StoreFront/Farmaluxa/sharedutil/src/main/res/layout/item_header_requisition_layout.xml" value="0.1" />
+        <entry key="..\:/Users/vmddl/Documents/StoreFront/Farmaluxa/warehouse/src/main/res/layout/item_recycler_requisition_wh_layout.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.184" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.184" />
         <entry key="app/src/main/res/drawable/ic_lock.xml" value="0.184" />

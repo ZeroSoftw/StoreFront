@@ -2,12 +2,12 @@
     <!-- Base application theme. -->
     <style name="Theme.Farmaluxa" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/indigo_400</item>
-        <item name="colorPrimaryVariant">@color/indigo_400_dark</item>
+        <item name="colorPrimary">@color/blue_primary</item>
+        <item name="colorPrimaryVariant">@color/blue_primary_dark</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/indigo_400</item>
-        <item name="colorSecondaryVariant">@color/indigo_400_dark</item>
+        <item name="colorSecondary">@color/yellow_700</item>
+        <item name="colorSecondaryVariant">@color/yellow_700_dark</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
