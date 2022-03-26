@@ -8,6 +8,5 @@
     <fragment
         android:id="@+id/requisitionWhFragment"
         android:name="com.mx.farmaluxa.warehouse.ui.view.requisition.RequisitionWhFragment"
-        android:label="fragment_requisition_wh"
         tools:layout="@layout/fragment_requisition_wh" />
 </navigation>

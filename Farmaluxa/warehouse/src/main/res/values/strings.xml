@@ -7,4 +7,9 @@
     <string name="str_num_requisition">#%1$s</string>
     <string name="str_num_product">%1$d artículo</string>
     <string name="str_show_detail_requisition">Ver más</string>
+
+
+    <!-- DrawMenu -->
+    <string name="str_warehouse_rol">Almacenista</string>
+
 </resources>

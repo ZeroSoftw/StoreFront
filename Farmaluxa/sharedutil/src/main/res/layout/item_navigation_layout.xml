@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/indigo_400">
+
+
+    <ImageView
+        android:id="@+id/ivImageProfile"
+        android:layout_width="@dimen/dimen_one_hundred_twenty"
+        android:layout_height="@dimen/dimen_one_hundred_twenty"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_seventy"
+        android:contentDescription="@string/desc_image_profile"
+        android:importantForAutofill="no"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_account_circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tool:tint="@android:color/white" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_sixteen"
+        android:fontFamily="@font/bevietnampro_extra_bold"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txt_twenty_eight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivImageProfile"
+        tool:text="Gustavo Hernandez Parra" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvEmployeeId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_sixteen"
+        android:fontFamily="@font/bevietnampro_bold"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txt_seventeen"
+        app:layout_constraintEnd_toEndOf="@+id/tvUserName"
+        app:layout_constraintStart_toStartOf="@+id/tvUserName"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserName"
+        tool:ignore="TextContrastCheck"
+        tool:text="#00000001" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chpEmployeeRol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_sixteen"
+        android:fontFamily="@font/bevietnampro_bold"
+        android:minHeight="@dimen/dimen_forty_eight"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txt_seventeen"
+        app:chipBackgroundColor="@color/chip_background_drawable"
+        app:layout_constraintEnd_toEndOf="@id/tvEmployeeId"
+        app:layout_constraintStart_toStartOf="@+id/tvEmployeeId"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmployeeId"
+        tool:ignore="TextContrastCheck"
+        tool:text="Almacenista" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnClose"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_twenty_eight"
+        android:fontFamily="@font/bevietnampro_extra_bold"
+        android:padding="@dimen/dimen_sixteen"
+        android:text="@string/str_close_app"
+        android:textAllCaps="false"
+        android:textColor="@color/indigo_400"
+        android:textSize="@dimen/txt_eighteen"
+        app:backgroundTint="@android:color/white"
+        app:cornerRadius="@dimen/dimen_seventy_three"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
