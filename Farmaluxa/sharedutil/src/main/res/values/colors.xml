@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="indigo_400">#5c84ff</color>
-    <color name="indigo_400_dark">#0058cb</color>
+<!--    Primary color-->
+    <color name="blue_primary">#5c84ff</color>
+    <color name="blue_primary_dark">#0058cb</color>
+
+<!--    Second color-->
+    <color name="ligth_blue_800_dark">#004c8c</color>
+    <color name="yellow_700">#ffd600</color>
+    <color name="yellow_700_dark">#c7a500</color>
 
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-
-    <color name="blue_login">#5C84FF</color>
     <color name="blue_icon">#BFD3FF</color>
 
 
