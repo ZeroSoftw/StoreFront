@@ -4,7 +4,7 @@
     xmlns:tool="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/indigo_400">
+    android:background="@color/blue_primary">
 
 
     <ImageView
@@ -79,7 +79,7 @@
         android:padding="@dimen/dimen_sixteen"
         android:text="@string/str_close_app"
         android:textAllCaps="false"
-        android:textColor="@color/indigo_400"
+        android:textColor="@color/blue_primary"
         android:textSize="@dimen/txt_eighteen"
         app:backgroundTint="@android:color/white"
         app:cornerRadius="@dimen/dimen_seventy_three"
