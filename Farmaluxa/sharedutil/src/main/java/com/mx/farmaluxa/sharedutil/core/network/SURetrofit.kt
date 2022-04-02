@@ -39,9 +39,9 @@ object SURetrofit {
 //            .addInterceptor(authInterceptor)
             .build()
 
-    fun retrofitHelper(url: String): Retrofit {
+    fun retrofitHelper(url: String? = null): Retrofit {
         return Retrofit.Builder()
-            .baseUrl(url)
+            .baseUrl(url ?: "" )
             .client(client)
             .addConverterFactory(GsonConverterFactory.create())
             .build()

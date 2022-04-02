@@ -1,37 +1,36 @@
 package com.mx.farmaluxa.sharedutil.data.repository
 
 import android.content.Context
-import com.mx.farmaluxa.sharedutil.core.network.SURetrofit.retrofitHelper
+import com.mx.farmaluxa.sharedutil.core.network.*
+import com.mx.farmaluxa.sharedutil.data.model.entity.SUGenericEntity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import retrofit2.Retrofit
 
 class SURepository {
 
-    /*suspend inline fun <reified T> apiRepository(
+    suspend inline fun <reified T> apiRepository(
         context: Context,
         url: String,
         entityRequest: Any? = null,
-    ): POSGenericResponse<T> {
+    ): SUGenericEntity<T> {
 
-        return withContext(Dispatchers.IO){
+        return withContext(Dispatchers.IO) {
 
             try {
-                val retrofitRepository = Retrofit.retrofitHelper()?.create(POSService::class.java)
+                val retrofitRepository = SURetrofit.retrofitHelper().create(SUService::class.java)
 
                 val response = if (entityRequest == null) {
-                    retrofitRepository!!.getServiceCoroutine(url)
+                    retrofitRepository.getServiceCoroutine(url)
                 } else {
-                    retrofitRepository!!.postServiceCoroutine(url, entityRequest)
+                    retrofitRepository.postServiceCoroutine(url, entityRequest)
                 }
 
-                ResponseManagementServices.onSuccess(response, context)
+                SUManagerService.onSuccess(response, context)
 
-//            ResponseManagementServices.onFailure(response.message!!, context)
             } catch (t: Throwable) {
-                ResponseManagementServices.onFailure(t.message!!, context)
+                SUManagerService.onFailure(t.message!!, context)
             }
         }
-    }*/
+    }
 
 }

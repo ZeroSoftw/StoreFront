@@ -2,6 +2,19 @@
 <resources>
     <string name="app_name">Farmaluxa</string>
 
+<!--    MESSAGE ERROR-->
+    <string name="PM_0000">OK</string>
+    <string name="PM_0001">Error de comunicaciones.</string>
+    <string name="service_error_null_response">Sin respuesta.</string>
+    <string name="service_error_not_data">Sin información.</string>
+    <string name="service_error_unknown">Error desconocido.</string>
+    <string name="service_error_get_device_id">Error al obtener Device ID.</string>
+    <string name="service_error_invalidate_session">No se tiene una sesión activa.</string>
+    <string name="service_error_time_out">Se ha agotado el tiempo de espera.</string>
+    <string name="service_error_not_connected">La conexión a Internet parece estar desactivada.</string>
+    <string name="service_error_communications">Error de comunicaciones.</string>
+<!--    -->
+
 <!--    ALERT DIALOG-->
     <string name="str_title_alert">Aviso</string>
     <string name="str_cancel">Cancelar</string>
