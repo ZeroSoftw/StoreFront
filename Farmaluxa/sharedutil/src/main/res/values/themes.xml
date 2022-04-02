@@ -10,8 +10,21 @@
         <item name="colorSecondaryVariant">@color/yellow_700_dark</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
         <!-- Customize your theme here. -->
+
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="toolbar_header" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:fontFamily">@font/bevietnampro_light</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/txt_twenty</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
     </style>
 
 </resources>

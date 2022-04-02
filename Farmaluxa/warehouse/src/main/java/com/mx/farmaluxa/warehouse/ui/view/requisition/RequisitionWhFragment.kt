@@ -5,7 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toolbar
 import androidx.fragment.app.viewModels
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupWithNavController
 import com.mx.farmaluxa.warehouse.R
 import com.mx.farmaluxa.warehouse.databinding.FragmentRequisitionWhBinding
 import com.mx.farmaluxa.warehouse.ui.view.viewmodel.requisition.RequisitionWhViewModel
@@ -33,8 +37,6 @@ class RequisitionWhFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        this.binding.iHeaderLayout.tvTitle.text = getString(R.string.str_title_module)
 
         this.viewModel.setAdapterInRecyclerView(
             recycler = this.binding.rvRequisition

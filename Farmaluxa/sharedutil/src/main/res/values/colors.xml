@@ -13,6 +13,12 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="blue_icon">#BFD3FF</color>
+
+
+    <color name="blue_header">#5C84FF</color>
+    <color name="background_drawable">#6C85FB</color>
+    <color name="chip_background_drawable">#8095F7</color>
+    <color name="chip_background">#BFD3FF</color>
     <color name="indigo_50_reset">#e8eaf6</color>
 
 </resources>
