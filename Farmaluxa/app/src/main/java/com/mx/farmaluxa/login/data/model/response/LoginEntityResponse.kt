@@ -1,5 +1,5 @@
 package com.mx.farmaluxa.login.data.model.response
 
-data class LoginResponse(
+data class LoginEntityResponse(
     var user: String
 )

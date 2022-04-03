@@ -74,6 +74,8 @@
         android:layout_marginTop="@dimen/dimen_fifteen"
         app:startIconDrawable="@drawable/ic_lock"
         app:startIconTint="@color/blue_icon"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/blue_icon"
         android:background="@color/white"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:hint="@string/str_password"

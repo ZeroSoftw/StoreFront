@@ -9,13 +9,18 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import com.mx.farmaluxa.login.data.model.request.LoginEntityRequest
 import com.mx.farmaluxa.login.databinding.FragmentLoginBinding
+import com.mx.farmaluxa.login.ui.viewmodel.LoginViewModel
 import com.mx.farmaluxa.sharedutil.core.util.SUUtil
 import com.mx.farmaluxa.warehouse.ui.view.WarehouseActivity
 
 class LoginFragment : Fragment() {
 
     private lateinit var binding: FragmentLoginBinding
+
+    private val viewModel: LoginViewModel by viewModels()
 
     companion object {
 
@@ -41,15 +46,26 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         this.binding.btnLogin.setOnClickListener {
-            val user = this.binding.tilUser.editText!!.text.toString()
-            val pass = this.binding.tilPassword.editText!!.text.toString()
-            if(user == "admin" && pass == "pass"){
-                this.showWarehouse()
-            } else {
-                this.binding.tilUser.editText!!.setText("")
-                this.binding.tilPassword.editText!!.setText("")
-                SUUtil.MaterialAlertDialog(this.requireContext(), "Usuario o contraseña incorrecto")
+            val entity = LoginEntityRequest(
+                username = this.binding.tilUser.editText!!.toString(),
+                password = this.binding.tilPassword.editText!!.toString()
+            )
+
+            this.viewModel.getLoginViewModel(this.requireContext(), entity)
+            this.viewModel.mldLoginEntity.observe(viewLifecycleOwner){
+
             }
+
+
+//            val user = this.binding.tilUser.editText!!.text.toString()
+//            val pass = this.binding.tilPassword.editText!!.text.toString()
+//            if(user == "admin" && pass == "pass"){
+//                this.showWarehouse()
+//            } else {
+//
+//                this.binding.tilPassword.editText!!.setText("")
+//                SUUtil.MaterialAlertDialog(this.requireContext(), "Usuario o contraseña incorrecto")
+//            }
 
         }
 
@@ -89,8 +105,8 @@ class LoginFragment : Fragment() {
         return isInstalled
     }
 
-    private fun showWarehouse() {
-        val intent = Intent(this.requireContext(), WarehouseActivity::class.java)
-        startActivity(intent)
-    }
+//    private fun showWarehouse() {
+//        val intent = Intent(this.requireContext(), WarehouseActivity::class.java)
+//        startActivity(intent)
+//    }
 }

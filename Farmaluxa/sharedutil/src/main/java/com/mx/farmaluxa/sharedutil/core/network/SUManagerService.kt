@@ -153,6 +153,7 @@ class SUManagerService {
 
                 var map: Map<String, Any> = HashMap()
                 map = Gson().fromJson(jsonObject.toString(), map.javaClass)
+                val a = map
 //                val codeJson = map.filter { it.key.contains("cod", true) }.map { it.key }.first()
 //                val messageJson =
 //                    map.filter { it.key.contains("mens", true) }.map { it.key }.first()

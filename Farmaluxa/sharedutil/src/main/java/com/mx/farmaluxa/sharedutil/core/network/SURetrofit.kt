@@ -1,5 +1,6 @@
 package com.mx.farmaluxa.sharedutil.core.network
 
+import com.mx.farmaluxa.sharedutil.core.util.SUURL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -39,9 +40,9 @@ object SURetrofit {
 //            .addInterceptor(authInterceptor)
             .build()
 
-    fun retrofitHelper(url: String? = null): Retrofit {
+    fun retrofitHelper(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl(url ?: "" )
+            .baseUrl(SUURL.getBaseURL())
             .client(client)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
