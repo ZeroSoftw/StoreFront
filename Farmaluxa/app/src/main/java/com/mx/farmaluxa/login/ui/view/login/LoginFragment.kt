@@ -53,7 +53,7 @@ class LoginFragment : Fragment() {
 
             this.viewModel.getLoginViewModel(this.requireContext(), entity)
             this.viewModel.mldLoginEntity.observe(viewLifecycleOwner){
-
+                this.showWarehouse()
             }
 
 
@@ -105,8 +105,8 @@ class LoginFragment : Fragment() {
         return isInstalled
     }
 
-//    private fun showWarehouse() {
-//        val intent = Intent(this.requireContext(), WarehouseActivity::class.java)
-//        startActivity(intent)
-//    }
+    private fun showWarehouse() {
+        val intent = Intent(this.requireContext(), WarehouseActivity::class.java)
+        startActivity(intent)
+    }
 }
