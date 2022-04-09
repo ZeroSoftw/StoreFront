@@ -20,6 +20,7 @@
         <entry key="sharedutil/src/main/res/drawable/ic_header_bg.xml" value="0.184" />
         <entry key="sharedutil/src/main/res/drawable/ic_menu.xml" value="0.184" />
         <entry key="sharedutil/src/main/res/drawable/ic_search.xml" value="0.184" />
+        <entry key="sharedutil/src/main/res/layout/item_header_product_layout.xml" value="0.31252672082086363" />
         <entry key="sharedutil/src/main/res/layout/item_header_requisition_layout.xml" value="0.3002780352177943" />
         <entry key="sharedutil/src/main/res/layout/item_navigation_layout.xml" value="0.3002780352177943" />
         <entry key="warehouse/src/main/res/drawable/ic_arrow_forward.xml" value="0.184" />
@@ -28,7 +29,9 @@
         <entry key="warehouse/src/main/res/drawable/ic_requisition.xml" value="0.184" />
         <entry key="warehouse/src/main/res/drawable/ic_search.xml" value="0.184" />
         <entry key="warehouse/src/main/res/layout/activity_warehouse.xml" value="0.3002780352177943" />
+        <entry key="warehouse/src/main/res/layout/fragment_new_product.xml" value="0.31252672082086363" />
         <entry key="warehouse/src/main/res/layout/fragment_requisition_wh.xml" value="0.3002780352177943" />
+        <entry key="warehouse/src/main/res/layout/item_new_products_layout.xml" value="0.31252672082086363" />
         <entry key="warehouse/src/main/res/layout/item_recycler_requisition_wh_layout.xml" value="0.22659256092347158" />
       </map>
     </option>

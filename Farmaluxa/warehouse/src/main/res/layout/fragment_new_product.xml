@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.product.NewProductFragment">
+
+    <include
+        android:id="@+id/iToolbar"
+        layout="@layout/item_header_product_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glV1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glV2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".7" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clImagePreviewContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_twenty_four"
+        android:background="@color/background_no_image"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/glV2"
+        app:layout_constraintStart_toStartOf="@id/glV1"
+        app:layout_constraintTop_toBottomOf="@+id/iToolbar">
+
+        <ImageView
+            android:id="@+id/ivNoImage"
+            android:layout_width="@dimen/dimen_fifty_eight"
+            android:layout_height="0dp"
+            android:contentDescription="@string/desc_add_products"
+            android:scaleType="center"
+            android:src="@drawable/ico_add_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ImageContrastCheck" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvNoImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bevietnampro_semi_bold"
+            android:gravity="center"
+            android:text="@string/str_no_image_product"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_teen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivNoImage"
+            app:layout_constraintVertical_bias="0.13"
+            tools:ignore="TextContrastCheck" />
+
+        <ImageView
+            android:id="@+id/ivProductImagePreview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/desc_add_products"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ImageContrastCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvSelectImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_fifteen"
+        android:fontFamily="@font/bevietnampro_bold"
+        android:gravity="center"
+        android:text="@string/str_no_image_product"
+        android:textColor="@color/color_blue_controls"
+        android:textSize="@dimen/txt_fourteen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clImagePreviewContainer" />
+
+    <include
+        android:id="@+id/iFormulary"
+        layout="@layout/item_new_products_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_forty_eight"
+        android:layout_marginBottom="@dimen/dimen_thirty_three"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSelectImage"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddProduct"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddProduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/str_new_product"
+        app:cornerRadius="@dimen/dimen_thirty"
+        android:textSize="@dimen/txt_seventeen"
+        android:textAllCaps="false"
+        android:fontFamily="@font/bevietnampro_bold"
+        android:padding="@dimen/dimen_fifteen"
+        android:layout_marginStart="@dimen/dimen_twenty_four"
+        android:layout_marginEnd="@dimen/dimen_twenty_four"
+        android:layout_marginTop="@dimen/dimen_fifteen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/dimen_thirty_three"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

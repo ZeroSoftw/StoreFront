@@ -3,6 +3,7 @@ package com.mx.farmaluxa.warehouse.ui.view
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.graphics.drawable.DrawableCompat
+import androidx.fragment.app.findFragment
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
@@ -36,6 +37,10 @@ class WarehouseActivity : AppCompatActivity() {
 
         this.binding.iHeaderLayout.toolbar.title = getString(com.mx.farmaluxa.sharedutil.R.string.app_name)
         this.binding.iHeaderLayout.tvTitle.text = getString(R.string.str_title_module)
+        this.binding.iHeaderLayout.iBtnAddProducts.setOnClickListener {
+            navController.navigateUp() // to clear previous navigation history
+            navController.navigate(R.id.newProductFragment)
+        }
 
         this.configureDrawMenu()
     }

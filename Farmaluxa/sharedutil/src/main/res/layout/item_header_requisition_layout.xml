@@ -9,12 +9,13 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/blue_header">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/blue_header"
+            android:background="@drawable/image_header"
             android:padding="@dimen/dimen_sixteen">
 
             <!-- ToolBar widget -->
@@ -57,11 +58,11 @@
                 android:background="?attr/selectableItemBackground"
                 android:contentDescription="@string/desc_add_products"
                 android:src="@drawable/ic_add_circle"
-                android:visibility="invisible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/toolbar"
-                tools:visibility="visible" />
+                tools:visibility="visible"
+                app:tint="@android:color/white" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

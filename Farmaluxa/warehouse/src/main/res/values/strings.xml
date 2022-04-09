@@ -12,4 +12,25 @@
     <!-- DrawMenu -->
     <string name="str_warehouse_rol">Almacenista</string>
 
+    <!-- NewProductFragment -->
+    <string name="str_no_image_product">Sin imagen seleccionada</string>
+    <string name="str_new_product">Dar de alta producto</string>
+
+    <string name="hint_name_product">Nombre</string>
+    <string name="hint_active_substance">Sustancia activa</string>
+    <string name="hint_mark">Marca</string>
+    <string name="hint_laboratory">Laboratorio</string>
+    <string name="hint_category">Categoría</string>
+    <string name="hint_grammage">Gramaje</string>
+    <string name="hint_serial_number">Número de serie</string>
+    <string name="hint_expire_Date">Fecha de caducidad</string>
+    <string name="hint_quantity">Cantidad</string>
+    <string name="hint_lote">Lote</string>
+    <string name="hint_sell_Cost">Costo venta</string>
+    <string name="hint_use">Usos</string>
+    <string name="hint_detail">Detalle</string>
+    <string name="hint_recommendation">Recomendaciones</string>
+
+    <string name="desc_image_selected">Agregar imagen del producto</string>
+
 </resources>

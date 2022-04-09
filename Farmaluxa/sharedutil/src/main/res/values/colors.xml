@@ -21,4 +21,9 @@
     <color name="chip_background">#BFD3FF</color>
     <color name="indigo_50_reset">#e8eaf6</color>
 
+
+    <color name="background_no_image">#d8e4ff</color>
+    <color name="color_blue_controls">#547eff</color>
+
+
 </resources>

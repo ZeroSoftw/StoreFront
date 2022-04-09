@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilUserName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_twenty_four"
+            android:layout_marginEnd="@dimen/dimen_twenty_four"
+            android:background="@color/white"
+            android:hint="@string/hint_name_product"
+            app:boxCornerRadiusBottomEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusBottomStart="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopStart="@dimen/dimen_twenty_four"
+            app:boxStrokeColor="@color/color_blue_controls"
+            app:boxStrokeWidth="@dimen/dimen_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etUserName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textNoSuggestions|text"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilActiveSubstance"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_twenty_four"
+            android:layout_marginTop="@dimen/dimen_twenty_four"
+            android:layout_marginEnd="@dimen/dimen_twenty_four"
+            android:background="@color/white"
+            android:hint="@string/hint_active_substance"
+            app:boxCornerRadiusBottomEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusBottomStart="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopStart="@dimen/dimen_twenty_four"
+            app:boxStrokeColor="@color/color_blue_controls"
+            app:boxStrokeWidth="@dimen/dimen_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tilUserName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etActiveSubstance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textNoSuggestions|text"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilMark"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_twenty_four"
+            android:layout_marginTop="@dimen/dimen_twenty_four"
+            android:layout_marginEnd="@dimen/dimen_twenty_four"
+            android:background="@color/white"
+            android:hint="@string/hint_mark"
+            app:boxCornerRadiusBottomEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusBottomStart="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopStart="@dimen/dimen_twenty_four"
+            app:boxStrokeColor="@color/color_blue_controls"
+            app:boxStrokeWidth="@dimen/dimen_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tilActiveSubstance">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etMark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textNoSuggestions|text"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilLaboratory"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_twenty_four"
+            android:layout_marginTop="@dimen/dimen_twenty_four"
+            android:layout_marginEnd="@dimen/dimen_twenty_four"
+            android:background="@color/white"
+            android:hint="@string/hint_laboratory"
+            app:boxCornerRadiusBottomEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusBottomStart="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopStart="@dimen/dimen_twenty_four"
+            app:boxStrokeColor="@color/color_blue_controls"
+            app:boxStrokeWidth="@dimen/dimen_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tilMark">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etLaboratory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textNoSuggestions|text"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilCategory"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_twenty_four"
+            android:layout_marginTop="@dimen/dimen_twenty_four"
+            android:layout_marginEnd="@dimen/dimen_twenty_four"
+            android:background="@color/white"
+            android:hint="@string/hint_category"
+            app:boxCornerRadiusBottomEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusBottomStart="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopStart="@dimen/dimen_twenty_four"
+            app:boxStrokeColor="@color/color_blue_controls"
+            app:boxStrokeWidth="@dimen/dimen_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tilLaboratory">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/auTvSpinnerCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilGrammage"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_twenty_four"
+            android:layout_marginTop="@dimen/dimen_twenty_four"
+            android:layout_marginEnd="@dimen/dimen_twenty_four"
+            android:background="@color/white"
+            android:hint="@string/hint_grammage"
+            app:boxCornerRadiusBottomEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusBottomStart="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopStart="@dimen/dimen_twenty_four"
+            app:boxStrokeColor="@color/color_blue_controls"
+            app:boxStrokeWidth="@dimen/dimen_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tilCategory">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etGrammage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textNoSuggestions|text"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilSerialNumber"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_twenty_four"
+            android:layout_marginTop="@dimen/dimen_twenty_four"
+            android:layout_marginEnd="@dimen/dimen_twenty_four"
+            android:background="@color/white"
+            android:hint="@string/hint_serial_number"
+            app:boxCornerRadiusBottomEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusBottomStart="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopStart="@dimen/dimen_twenty_four"
+            app:boxStrokeColor="@color/color_blue_controls"
+            app:boxStrokeWidth="@dimen/dimen_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tilGrammage">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSerialNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textNoSuggestions|text"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilExpireDate"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_twenty_four"
+            android:layout_marginTop="@dimen/dimen_twenty_four"
+            android:layout_marginEnd="@dimen/dimen_twenty_four"
+            android:background="@color/white"
+            android:hint="@string/hint_expire_Date"
+            app:boxCornerRadiusBottomEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusBottomStart="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopStart="@dimen/dimen_twenty_four"
+            app:boxStrokeColor="@color/color_blue_controls"
+            app:boxStrokeWidth="@dimen/dimen_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tilSerialNumber">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etExpireDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textNoSuggestions|text"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilQuantity"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_twenty_four"
+            android:layout_marginTop="@dimen/dimen_twenty_four"
+            android:layout_marginEnd="@dimen/dimen_twenty_four"
+            android:background="@color/white"
+            android:hint="@string/hint_quantity"
+            app:boxCornerRadiusBottomEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusBottomStart="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopStart="@dimen/dimen_twenty_four"
+            app:boxStrokeColor="@color/color_blue_controls"
+            app:boxStrokeWidth="@dimen/dimen_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tilExpireDate">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textNoSuggestions|text"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilLote"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_twenty_four"
+            android:layout_marginTop="@dimen/dimen_twenty_four"
+            android:layout_marginEnd="@dimen/dimen_twenty_four"
+            android:background="@color/white"
+            android:hint="@string/hint_lote"
+            app:boxCornerRadiusBottomEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusBottomStart="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopStart="@dimen/dimen_twenty_four"
+            app:boxStrokeColor="@color/color_blue_controls"
+            app:boxStrokeWidth="@dimen/dimen_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tilQuantity">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etLote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textNoSuggestions|text"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilSellCost"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_twenty_four"
+            android:layout_marginTop="@dimen/dimen_twenty_four"
+            android:layout_marginEnd="@dimen/dimen_twenty_four"
+            android:background="@color/white"
+            android:hint="@string/hint_sell_Cost"
+            app:boxCornerRadiusBottomEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusBottomStart="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopStart="@dimen/dimen_twenty_four"
+            app:boxStrokeColor="@color/color_blue_controls"
+            app:boxStrokeWidth="@dimen/dimen_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tilLote">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSellCost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textNoSuggestions|text"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilUse"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_twenty_four"
+            android:layout_marginTop="@dimen/dimen_twenty_four"
+            android:layout_marginEnd="@dimen/dimen_twenty_four"
+            android:background="@color/white"
+            android:hint="@string/hint_use"
+            app:boxCornerRadiusBottomEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusBottomStart="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopEnd="@dimen/dimen_twenty_four"
+            app:boxCornerRadiusTopStart="@dimen/dimen_twenty_four"
+            app:boxStrokeColor="@color/color_blue_controls"
+            app:boxStrokeWidth="@dimen/dimen_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tilSellCost">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/auTvSpinnerUse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_twenty_four"
+            android:layout_marginTop="@dimen/dimen_twenty_four"
+            android:layout_marginEnd="@dimen/dimen_twenty_four"
+            android:background="@drawable/background_search_view"
+            android:elevation="1dp"
+            android:gravity="top|start"
+            android:hint="@string/hint_detail"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLength="300"
+            android:maxLines="10"
+            android:minLines="6"
+            android:padding="@dimen/dimen_sixteen"
+            android:scrollbars="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tilUse" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRecommendation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_twenty_four"
+            android:layout_marginTop="@dimen/dimen_twenty_four"
+            android:layout_marginEnd="@dimen/dimen_twenty_four"
+            android:background="@drawable/background_search_view"
+            android:elevation="1dp"
+            android:gravity="top|start"
+            android:hint="@string/hint_recommendation"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLength="300"
+            android:maxLines="10"
+            android:minLines="6"
+            android:padding="@dimen/dimen_sixteen"
+            android:scrollbars="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etDetail" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

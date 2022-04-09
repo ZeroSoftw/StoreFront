@@ -5,6 +5,7 @@
     <application>
         <activity
             android:name=".ui.view.WarehouseActivity"
+            android:theme="@style/Theme.Farmaluxa"
             android:exported="false" />
     </application>
 

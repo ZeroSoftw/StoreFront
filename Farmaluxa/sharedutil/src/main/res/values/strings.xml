@@ -40,4 +40,8 @@
 
     <string name="desc_image_profile">Imagen del usuario loqueado</string>
 
+    <!-- HEADER_NEW_PRODUCT -->
+    <string name="str_title_new_product">Alta producto</string>
+    <string name="desc_close_button_dialog_new_product">Cerrar vista alta de productos</string>
+
 </resources>
