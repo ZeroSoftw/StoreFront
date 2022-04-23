@@ -122,15 +122,16 @@
             android:id="@+id/chpStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/bevietnampro_bold"
             android:minHeight="@dimen/dimen_forty_eight"
             android:textColor="@color/blue_primary"
-            android:fontFamily="@font/bevietnampro_bold"
+            app:chipBackgroundColor="@color/blue_icon"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/glV2"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/tvClientName"
             app:layout_constraintTop_toBottomOf="@+id/glH1"
-            app:chipBackgroundColor="@color/blue_icon"
+            tools:ignore="TextContrastCheck"
             tools:text="Surtimiento" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

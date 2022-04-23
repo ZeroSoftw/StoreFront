@@ -67,49 +67,4 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clSearch"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/dimen_twenty"
-        android:layout_marginTop="@dimen/dimen_fifteen"
-        android:layout_marginEnd="@dimen/dimen_twenty"
-        android:layout_marginBottom="@dimen/dimen_fifteen"
-        android:background="@drawable/background_search_view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iHeaderLayout">
-
-        <SearchView
-            android:id="@+id/svRequisition"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/dimen_eight"
-            android:focusable="false"
-            android:focusableInTouchMode="false"
-            android:iconifiedByDefault="false"
-            android:queryBackground="@android:color/transparent"
-            android:queryHint="@string/hint_search_requisition"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/iBtnAdvancedFilter"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageButton
-            android:id="@+id/iBtnAdvancedFilter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dimen_five"
-            android:background="@drawable/background_advanced_filter"
-            android:contentDescription="@string/desc_advanced_filter"
-            android:padding="@dimen/dimen_ten"
-            android:src="@drawable/ic_filter_alt"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tint="@android:color/white"
-            tools:ignore="TouchTargetSizeCheck" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

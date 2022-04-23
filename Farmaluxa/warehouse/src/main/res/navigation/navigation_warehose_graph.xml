@@ -8,11 +8,21 @@
     <fragment
         android:id="@+id/requisitionWhFragment"
         android:name="com.mx.farmaluxa.warehouse.ui.view.requisition.RequisitionWhFragment"
-        tools:layout="@layout/fragment_requisition_wh" />
+        tools:layout="@layout/fragment_requisition_wh" >
+        <action
+            android:id="@+id/to_filterRequisitionDialogFragment"
+            app:destination="@id/filterRequisitionDialogFragment" />
+    </fragment>
 
     <dialog
         android:id="@+id/newProductFragment"
-        android:name="com.mx.farmaluxa.warehouse.ui.view.product.NewProductFragment"
+        android:name="com.mx.farmaluxa.warehouse.ui.view.dialog.product.NewProductDialogFragment"
         android:label="fragment_new_product"
-        tools:layout="@layout/fragment_new_product" />
+        tools:layout="@layout/dialog_fragment_new_product" />
+
+    <dialog
+        android:id="@+id/filterRequisitionDialogFragment"
+        android:name="com.mx.farmaluxa.warehouse.ui.view.dialog.requisition.FilterRequisitionDialogFragment"
+        android:label="dialog_fragment_filter_requisition"
+        tools:layout="@layout/dialog_fragment_filter_requisition" />
 </navigation>

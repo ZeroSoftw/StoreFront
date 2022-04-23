@@ -43,6 +43,14 @@ class RequisitionWhFragment : Fragment() {
         )
 
         this.serviceGetAllRequisitions()
+
+        this.binding.iBtnAdvancedFilter.setOnClickListener {
+            it.findNavController().navigate(R.id.to_filterRequisitionDialogFragment)
+        }
+
+        this.viewModel.isLoading.observe(this.viewLifecycleOwner) {
+
+        }
     }
 
     private fun serviceGetAllRequisitions() {

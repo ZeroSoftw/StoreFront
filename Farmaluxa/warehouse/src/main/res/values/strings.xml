@@ -8,6 +8,7 @@
     <string name="str_num_product">%1$d artículo</string>
     <string name="str_show_detail_requisition">Ver más</string>
 
+    <string name="hint_search_requisition">Buscar Requisiciones</string>
 
     <!-- DrawMenu -->
     <string name="str_warehouse_rol">Almacenista</string>
@@ -32,5 +33,22 @@
     <string name="hint_recommendation">Recomendaciones</string>
 
     <string name="desc_image_selected">Agregar imagen del producto</string>
+
+
+    <!-- FilterRequisitionDialogFragment -->
+    <string name="str_title_filter">Filtrar por:</string>
+    <string name="str_clear_filter">Limpiar filtros</string>
+    <string name="str_title_filter_status">Estatus</string>
+    <string name="str_status_one">Surtimiento</string>
+    <string name="str_status_two">En camino</string>
+    <string name="str_status_three">Entregado</string>
+    <string name="str_status_four">Cancelación parcial</string>
+    <string name="str_status_five">Cancelación total</string>
+    <string name="str_status_six">Revisión cancelación</string>
+    <string name="str_save_filter">Guardar filtros</string>
+
+    <string name="msg_clear_filter">¿Estas seguro de limpiar los filtros?</string>
+
+    <string name="hint_date_filter">Fecha</string>
 
 </resources>
