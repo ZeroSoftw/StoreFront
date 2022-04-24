@@ -5,8 +5,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.mx.farmaluxa.warehouse.data.model.entity.RequisitionEntity
 import com.mx.farmaluxa.warehouse.databinding.ItemRecyclerRequisitionWhLayoutBinding
-import com.mx.farmaluxa.warehouse.ui.view.holder.requisition.RequisitionWhViewHolder
-import com.mx.farmaluxa.warehouse.ui.view.viewmodel.requisition.RequisitionWhViewModel
+import com.mx.farmaluxa.warehouse.ui.holder.requisition.RequisitionWhViewHolder
+import com.mx.farmaluxa.warehouse.ui.viewmodel.requisition.RequisitionWhViewModel
 
 class RequisitionWhAdapter(
     private var viewModel: RequisitionWhViewModel

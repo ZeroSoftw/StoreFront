@@ -1,6 +1,5 @@
 package com.mx.farmaluxa.warehouse.ui.view.dialog.requisition
 
-import android.app.AlertDialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,7 +10,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.mx.farmaluxa.sharedutil.core.util.dialogs.DialogFactory
 import com.mx.farmaluxa.warehouse.R
 import com.mx.farmaluxa.warehouse.databinding.DialogFragmentFilterRequisitionBinding
-import com.mx.farmaluxa.warehouse.ui.view.viewmodel.dialog.requisition.FilterRequisitionViewModel
+import com.mx.farmaluxa.warehouse.ui.viewmodel.dialog.requisition.FilterRequisitionViewModel
 
 /**
  * A simple [Fragment] subclass.

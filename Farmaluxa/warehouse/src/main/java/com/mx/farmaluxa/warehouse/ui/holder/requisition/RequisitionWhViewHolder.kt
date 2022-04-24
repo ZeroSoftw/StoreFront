@@ -1,11 +1,11 @@
-package com.mx.farmaluxa.warehouse.ui.view.holder.requisition
+package com.mx.farmaluxa.warehouse.ui.holder.requisition
 
 import android.content.Context
 import androidx.recyclerview.widget.RecyclerView
 import com.mx.farmaluxa.warehouse.R
 import com.mx.farmaluxa.warehouse.data.model.entity.RequisitionEntity
 import com.mx.farmaluxa.warehouse.databinding.ItemRecyclerRequisitionWhLayoutBinding
-import com.mx.farmaluxa.warehouse.ui.view.viewmodel.requisition.RequisitionWhViewModel
+import com.mx.farmaluxa.warehouse.ui.viewmodel.requisition.RequisitionWhViewModel
 
 class RequisitionWhViewHolder(
     private val binding: ItemRecyclerRequisitionWhLayoutBinding,

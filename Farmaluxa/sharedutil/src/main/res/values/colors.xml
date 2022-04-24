@@ -25,5 +25,8 @@
     <color name="background_no_image">#d8e4ff</color>
     <color name="color_blue_controls">#547eff</color>
 
+    <color name="color_red_500">#f44336</color>
+    <color name="color_green">#4caf50</color>
+
 
 </resources>

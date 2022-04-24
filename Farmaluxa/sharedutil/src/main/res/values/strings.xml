@@ -43,4 +43,14 @@
     <string name="str_title_new_product">Alta producto</string>
     <string name="desc_close_button_dialog_new_product">Cerrar vista alta de productos</string>
 
+    <!--    Product Supply-->
+    <string name="str_number_requisition">Num. requisicion:</string>
+    <string name="str_application_date">Fecha de solicitud:</string>
+    <string name="str_observations">Observaciones:</string>
+    <string name="str_request_amount">Cantidad solicitada:</string>
+    <string name="str_stocked_amount">Cantidad surtida:</string>
+    <string name="str_scan">Escanear</string>
+    <string name="str_out_stock">Sin existencia</string>
+    <string name="str_out_supply">Surtir</string>
+
 </resources>

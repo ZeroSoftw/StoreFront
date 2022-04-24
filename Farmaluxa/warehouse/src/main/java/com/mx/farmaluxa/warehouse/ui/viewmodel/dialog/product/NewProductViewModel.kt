@@ -1,9 +1,9 @@
-package com.mx.farmaluxa.warehouse.ui.view.viewmodel.dialog.requisition
+package com.mx.farmaluxa.warehouse.ui.viewmodel.dialog.product
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class FilterRequisitionViewModel : ViewModel() {
+class NewProductViewModel : ViewModel() {
 
     var isLoading = MutableLiveData<Boolean>()
 

@@ -13,7 +13,6 @@ import androidx.fragment.app.viewModels
 import com.mx.farmaluxa.login.data.model.request.LoginEntityRequest
 import com.mx.farmaluxa.login.databinding.FragmentLoginBinding
 import com.mx.farmaluxa.login.ui.viewmodel.LoginViewModel
-import com.mx.farmaluxa.sharedutil.core.util.SUUtil
 import com.mx.farmaluxa.warehouse.ui.view.WarehouseActivity
 
 class LoginFragment : Fragment() {
@@ -52,7 +51,7 @@ class LoginFragment : Fragment() {
             )
 
             this.viewModel.getLoginViewModel(this.requireContext(), entity)
-            this.viewModel.mldLoginEntity.observe(viewLifecycleOwner){
+            this.viewModel.mldLoginEntity.observe(viewLifecycleOwner) {
                 this.showWarehouse()
             }
 
@@ -69,7 +68,7 @@ class LoginFragment : Fragment() {
 
         }
 
-        this.binding.tvSignUp.setOnClickListener{
+        this.binding.tvSignUp.setOnClickListener {
             this.openWhatsApp()
         }
     }

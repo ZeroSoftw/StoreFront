@@ -1,4 +1,4 @@
-package com.mx.farmaluxa.warehouse.ui.view.viewmodel.requisition
+package com.mx.farmaluxa.warehouse.ui.viewmodel.requisition
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

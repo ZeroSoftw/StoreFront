@@ -1,18 +1,16 @@
 package com.mx.farmaluxa.warehouse.ui.view.dialog.product
 
 import android.os.Bundle
-import android.view.*
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.mx.farmaluxa.sharedutil.R
 import com.mx.farmaluxa.warehouse.databinding.DialogFragmentNewProductBinding
-import com.mx.farmaluxa.warehouse.ui.view.viewmodel.dialog.product.NewProductViewModel
+import com.mx.farmaluxa.warehouse.ui.viewmodel.dialog.product.NewProductViewModel
 
-
-/**
- * A simple [Fragment] subclass.
- */
 class NewProductDialogFragment : DialogFragment() {
 
     private lateinit var binding: DialogFragmentNewProductBinding
