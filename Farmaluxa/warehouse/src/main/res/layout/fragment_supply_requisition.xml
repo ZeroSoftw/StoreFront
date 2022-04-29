@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_ten"
+    tools:context=".ui.view.supplyrequisition.SupplyRequisitionFragment">
+
+    <TextView
+        android:id="@+id/tvDeliveryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bevietnampro_black"
+        android:text="18/24/25 13:45:30"
+        android:textSize="@dimen/txt_fifteen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvStorer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_five"
+        android:fontFamily="@font/bevietnampro_black"
+        android:gravity="end"
+        android:text="Victor Manuel Dominguez de la Rosa"
+        android:textSize="@dimen/txt_fifteen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeliveryDate" />
+
+    <TextView
+        android:id="@+id/tvTitleSupply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_ten"
+        android:fontFamily="@font/bevietnampro_black"
+        android:text="@string/str_number_requisition"
+        android:textColor="@color/blue_primary"
+        android:textSize="@dimen/txt_fifteen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStorer" />
+
+    <TextView
+        android:id="@+id/tvSupply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_five"
+        android:fontFamily="@font/bevietnampro_black"
+        android:text="#4423150"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_twenty_eight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleSupply" />
+
+    <TextView
+        android:id="@+id/tvTitleApplicationDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_ten"
+        android:fontFamily="@font/bevietnampro_black"
+        android:text="@string/str_application_date"
+        android:textColor="@color/blue_primary"
+        android:textSize="@dimen/txt_fifteen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSupply" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_five"
+        android:fontFamily="@font/bevietnampro_black"
+        android:text="18/08/2022 14:23"
+        android:textSize="@dimen/txt_eighteen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleApplicationDate" />
+
+    <TextView
+        android:id="@+id/tvTitleObservations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_ten"
+        android:fontFamily="@font/bevietnampro_black"
+        android:text="@string/str_observations"
+        android:textColor="@color/blue_primary"
+        android:textSize="@dimen/txt_fifteen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvObservations"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_one_hundred"
+        android:layout_marginTop="@dimen/dimen_five"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="@font/bevietnampro_black"
+        android:maxLength="100"
+        android:padding="@dimen/dimen_ten"
+        android:text="Realizar la entrega entre 12:00 y 20:00 horas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleObservations" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSupplyProduct"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:padding="@dimen/dimen_fifteen"
+        android:layout_marginTop="@dimen/dimen_ten"
+        android:text="@string/str_full_requisition"
+        android:textAllCaps="false"
+        android:textColor="@color/ligth_blue_800_dark"
+        app:cornerRadius="@dimen/dimen_fifteen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvObservations"
+        app:strokeColor="@color/ligth_blue_800_dark" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProducts"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_ten"
+        android:layout_marginBottom="@dimen/dimen_ten"
+        app:layout_constraintBottom_toTopOf="@+id/btnFullRequisition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSupplyProduct"
+        tools:listitem="@layout/item_recycler_supply_requisition_layout" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnFullRequisition"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:padding="@dimen/dimen_fifteen"
+        android:text="@string/str_full_requisition"
+        android:textAllCaps="false"
+        android:textColor="@color/ligth_blue_800_dark"
+        app:cornerRadius="@dimen/dimen_fifteen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="@color/ligth_blue_800_dark" />
+</androidx.constraintlayout.widget.ConstraintLayout>

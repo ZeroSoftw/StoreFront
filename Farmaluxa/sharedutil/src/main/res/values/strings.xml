@@ -49,8 +49,9 @@
     <string name="str_observations">Observaciones:</string>
     <string name="str_request_amount">Cantidad solicitada:</string>
     <string name="str_stocked_amount">Cantidad surtida:</string>
-    <string name="str_scan">Escanear</string>
+    <string name="str_scan">Escanear código</string>
     <string name="str_out_stock">Sin existencia</string>
     <string name="str_out_supply">Surtir</string>
+    <string name="str_full_requisition">Requision completa</string>
 
 </resources>

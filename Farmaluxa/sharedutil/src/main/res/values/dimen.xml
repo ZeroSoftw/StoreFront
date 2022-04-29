@@ -20,6 +20,7 @@
     <dimen name="dimen_sixty">60dp</dimen>
     <dimen name="dimen_seventy">70dp</dimen>
     <dimen name="dimen_seventy_three">73dp</dimen>
+    <dimen name="dimen_one_hundred">100dp</dimen>
     <dimen name="dimen_one_hundred_twenty">120dp</dimen>
     <dimen name="dimen_one_hundred_twenty_eight">128dp</dimen>
 

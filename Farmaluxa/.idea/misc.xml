@@ -10,11 +10,13 @@
         <entry key="..\:/Users/vmddl/Documents/StoreFront/Farmaluxa/warehouse/src/main/res/drawable/rounded_corner.xml" value="0.1485" />
         <entry key="..\:/Users/vmddl/Documents/StoreFront/Farmaluxa/warehouse/src/main/res/layout/dialog_fragment_filter_requisition.xml" value="0.18206521739130435" />
         <entry key="..\:/Users/vmddl/Documents/StoreFront/Farmaluxa/warehouse/src/main/res/layout/dialog_fragment_new_product.xml" value="0.18206521739130435" />
-        <entry key="..\:/Users/vmddl/Documents/StoreFront/Farmaluxa/warehouse/src/main/res/layout/fragment_product_supply.xml" value="0.5" />
+        <entry key="..\:/Users/vmddl/Documents/StoreFront/Farmaluxa/warehouse/src/main/res/layout/fragment_product_supply.xml" value="0.25" />
         <entry key="..\:/Users/vmddl/Documents/StoreFront/Farmaluxa/warehouse/src/main/res/layout/fragment_requisition_wh.xml" value="0.18206521739130435" />
+        <entry key="..\:/Users/vmddl/Documents/StoreFront/Farmaluxa/warehouse/src/main/res/layout/fragment_supply_requisition_detail.xml" value="0.25" />
         <entry key="..\:/Users/vmddl/Documents/StoreFront/Farmaluxa/warehouse/src/main/res/layout/item_new_products_layout.xml" value="0.18206521739130435" />
         <entry key="..\:/Users/vmddl/Documents/StoreFront/Farmaluxa/warehouse/src/main/res/layout/item_recycler_product_supply_layout.xml" value="0.25" />
         <entry key="..\:/Users/vmddl/Documents/StoreFront/Farmaluxa/warehouse/src/main/res/layout/item_recycler_requisition_wh_layout.xml" value="0.22" />
+        <entry key="..\:/Users/vmddl/Documents/StoreFront/Farmaluxa/warehouse/src/main/res/layout/item_recycler_supply_requisition_layout.xml" value="0.25" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.184" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.184" />
         <entry key="app/src/main/res/drawable/ic_lock.xml" value="0.184" />

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_margin="@dimen/dimen_ten"
     android:elevation="@dimen/dimen_five"
     android:padding="@dimen/dimen_ten"
@@ -13,20 +15,20 @@
         android:layout_height="match_parent"
         android:padding="@dimen/dimen_ten">
 
-        <TextView
-            android:id="@+id/tvSupply"
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvProduct"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimen_five"
             android:fontFamily="@font/bevietnampro_black"
-            android:text="AC Fast"
+            tools:text="AC Fast"
             android:textColor="@color/black"
             android:textSize="@dimen/txt_twenty"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvTitleRequestAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,15 +38,15 @@
             android:textColor="@color/blue_primary"
             android:textSize="@dimen/txt_eighteen"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvSupply" />
+            app:layout_constraintTop_toBottomOf="@+id/tvProduct" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvRequestAmount"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/txt_fifteen"
             android:fontFamily="@font/bevietnampro_black"
-            android:text="99999"
+            tools:text="99999"
             android:textColor="@color/black"
             android:textSize="@dimen/txt_eighteen"
             app:layout_constraintEnd_toEndOf="parent"
@@ -56,8 +58,14 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/ic_delivery_dining"
+            app:startIconTint="@color/blue_primary"
             android:layout_marginTop="@dimen/dimen_ten"
             android:hint="@string/str_stocked_amount"
+            app:boxCornerRadiusBottomEnd="@dimen/dimen_fifteen"
+            app:boxCornerRadiusBottomStart="@dimen/dimen_fifteen"
+            app:boxCornerRadiusTopEnd="@dimen/dimen_fifteen"
+            app:boxCornerRadiusTopStart="@dimen/dimen_fifteen"
             app:hintTextColor="@color/blue_primary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -69,48 +77,29 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnScan"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="wrap_content"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilScanCode"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dimen_ten"
-            android:textAllCaps="false"
-            android:padding="@dimen/dimen_fifteen"
-            android:text="@string/str_scan"
-            app:cornerRadius="@dimen/dimen_fifteen"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tilRequestAmount"
-            app:strokeColor="@color/blue_primary" />
-
-        <com.google.android.material.button.MaterialButton
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/dimen_fifteen"
-            android:textAllCaps="false"
-            android:text="@string/str_out_supply"
-            android:textColor="@color/color_green"
-            app:cornerRadius="@dimen/dimen_fifteen"
-            app:layout_constraintStart_toEndOf="@+id/btnScan"
-            app:layout_constraintEnd_toStartOf="@+id/btnOutstock"
-            app:layout_constraintTop_toTopOf="@+id/btnScan"
-            app:strokeColor="@color/color_green" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnOutstock"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/dimen_fifteen"
-            android:textAllCaps="false"
-            android:text="@string/str_out_stock"
-            android:textColor="@color/color_red_500"
-            app:cornerRadius="@dimen/dimen_fifteen"
+            app:startIconDrawable="@drawable/ic_center_focus"
+            app:startIconTint="@color/blue_primary"
+            android:layout_marginTop="@dimen/dimen_ten"
+            app:boxCornerRadiusBottomEnd="@dimen/dimen_fifteen"
+            app:boxCornerRadiusBottomStart="@dimen/dimen_fifteen"
+            app:boxCornerRadiusTopEnd="@dimen/dimen_fifteen"
+            app:boxCornerRadiusTopStart="@dimen/dimen_fifteen"
+            android:hint="@string/str_scan"
+            app:hintTextColor="@color/blue_primary"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/btnScan"
-            app:strokeColor="@color/color_red_500" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tilRequestAmount">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
