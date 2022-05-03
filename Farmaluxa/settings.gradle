@@ -16,3 +16,4 @@ rootProject.name = "Farmaluxa"
 include ':app'
 include ':sharedutil'
 include ':warehouse'
+include ':admin'

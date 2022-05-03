@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.category.CategoryFragment">
+
+    <include
+        android:id="@+id/iTitle"
+        layout="@layout/item_header_category_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/svCategories"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_twenty_four"
+        android:layout_marginTop="@dimen/dimen_twenty_eight"
+        android:layout_marginEnd="@dimen/dimen_twenty_four"
+        android:background="@drawable/background_search_view"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:iconifiedByDefault="false"
+        android:queryBackground="@android:color/transparent"
+        app:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iTitle"
+        app:queryHint="@string/hint_search_categories" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvDescCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_fifteen"
+        android:fontFamily="@font/bevietnampro_regular"
+        android:text="@string/str_select_category"
+        android:textColor="@color/color_desc_text"
+        android:textSize="@dimen/txt_fourteen"
+        app:layout_constraintEnd_toEndOf="@id/svCategories"
+        app:layout_constraintStart_toStartOf="@id/svCategories"
+        app:layout_constraintTop_toBottomOf="@id/svCategories"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCategory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/dimen_forty_eight"
+        android:layout_marginTop="@dimen/dimen_fourteen"
+        android:layout_marginEnd="@dimen/dimen_forty_eight"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescCategory"
+        tools:itemCount="5"
+        tools:listitem="@layout/item_recycler_category_layout" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabAddCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/dimen_sixteen"
+        android:layout_marginBottom="@dimen/dimen_sixteen"
+        android:backgroundTint="@color/color_blue_controls"
+        android:text="@string/str_add_category"
+        android:textColor="@color/white"
+        app:icon="@drawable/ic_post_add"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

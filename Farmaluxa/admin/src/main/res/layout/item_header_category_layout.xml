@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/iBtnClose"
+        android:layout_width="@dimen/dimen_forty_eight"
+        android:layout_height="@dimen/dimen_forty_eight"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintBottom_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvTitle"
+        android:contentDescription="@string/desc_close_button_category"
+        app:tint="@color/black" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_ten"
+        android:layout_marginEnd="@dimen/dimen_forty_eight"
+        android:minHeight="?attr/actionBarSize"
+        android:text="@string/title_categories"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_twenty"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:fontFamily="@font/bevietnampro_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iBtnClose"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

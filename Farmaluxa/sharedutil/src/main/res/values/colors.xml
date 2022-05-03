@@ -28,5 +28,7 @@
     <color name="color_red_500">#f44336</color>
     <color name="color_green">#4caf50</color>
 
+    <color name="color_desc_text">#9db6ff</color>
+
 
 </resources>

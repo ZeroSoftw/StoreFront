@@ -39,4 +39,5 @@ android {
 dependencies {
     implementation project(path: '::sharedutil')
     implementation project(path: ':warehouse')
+    implementation project(path: ':admin')
 }

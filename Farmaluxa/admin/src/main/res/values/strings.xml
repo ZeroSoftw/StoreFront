@@ -1,0 +1,12 @@
+<resources>
+    <!-- CategoryFragment -->
+    <string name="str_category_holder">%s - %s</string>
+    <string name="str_select_category">Selecciona una opción:</string>
+    <string name="str_add_category">Agregar</string>
+
+    <string name="hint_search_categories">Buscar categorías</string>
+
+    <string name="title_categories">Categorías</string>
+
+    <string name="desc_close_button_category">Cerrar vista alta de categorías</string>
+</resources>
